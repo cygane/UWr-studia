@@ -1,0 +1,47 @@
+Skopiuj do pliku poniższy fragment:
+
+przedmiot: Matematyka
+Jasio 2,2,2,1,2,3,4
+Małgosia 4,5,6,6,5
+Jasio 2
+Małgosia 4,5,6,6
+Zuzia 4,4,4
+Zuzia 5,5,5
+Kubuś 1,1,1,1
+Kubuś 2,2
+
+przedmiot: Język polski
+Jasio 5,5
+Małgosia 4,4
+Zuzia 4,4
+Kubuś 2,2,2,2
+Kubuś 1,1
+
+przedmiot: Biologia
+Jasio 3,3,3
+Małgosia 6
+Kubuś 3
+Zuzia 3,4,5,6
+Zuzia 3,4,5
+
+przedmiot: Historia
+Jasio 4,5,4,5
+Jasio 5,5,4,4
+Małgosia 3
+Zuzia 6,6
+Kubuś 2
+Zuzia 5
+
+przedmiot: Kurs programowania w Pythonie
+Jasio 4,5,4,5
+Jasio 5,5,4,4
+Zuzia 6,6
+Kubuś 2
+Zuzia 5
+Jak łatwo się domyślić, w tym fragmencie mamy fragment dziennika z ocenami dzieci. Jakiekolwiek wątpliwości odnośnie znaczenia użytych w pliku konstrukcji możesz wyjaśnić z prowadzącym.
+
+Napisz program, który:
+
+wczytuje poniższy dziennik i zapisuje go do odpowiedniej struktury danych (wykorzystaj słowniki) (0.5);
+dla każdego ucznia wypisuje jego "świadectwo", czyli informacje o ocenie końcowej dla wszystkich przedmiotów, na które dany uczeń chodził (ocena końcowa jest średnią zaokrągloną do pełnych ocen, dla kontroli poprawności średnia również powinna być wypisana) (0.25);
+ustala ranking uczniów, ze względu na średnią ocen na świadectwie (w rankingu należy wypisać uczniów w kolejności od najlepszego, dla każdego z nich należy wypisać średnią ocen) (0.25).

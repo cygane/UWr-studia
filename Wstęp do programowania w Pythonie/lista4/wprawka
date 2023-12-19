@@ -1,0 +1,15 @@
+Wprawka ma kilka wariantów (do wyboru), w każdym będziesz rysować zegar:  
+
+Wariant 1 (podstawowy, 1.9p)  
+Napisz funkcję zegar(godzina, minuta) rysującą tarczę zegarka pokazującą odpowiedni czas.  
+
+Wariant 2 (uproszczony, 1p)  
+Napisz funkcję demo_zegara() rysującą tarczę zegarka pokazującą jakiś czas  
+
+Wariant 3 (dla ambitnych, 2p)  
+Napisz funkcję zegar(godzina, minuta, sekunda) rysującą zegar z sekundnikiem (użyj innego koloru dla sekundnika). Wykorzystaj tę funkcję do stworzenia animacji zegara, która pokazuje rzeczywisty czas. Warto skorzystać z następujących funkcji modułu turtle:
+clear() -- czyści rysunek
+update() -- uaktualnia stan ekranu
+tracer(0,0) -- włącza rysowanie bez opóźnień, efekt dowolnego ciągu operacji graficznych widoczny jest dopiero po wykonaniu update()
+Ponadto może się przydać time.sleep
+Jeśli chodzi o przeczytanie czasu, to częścią tej wersji wprawki jest samodzielne znalezienie odpowiedniej funkcji w Internecie

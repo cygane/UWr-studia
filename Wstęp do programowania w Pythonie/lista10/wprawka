@@ -1,0 +1,26 @@
+Bardzo Prosta Wprawka na Dobry Początek Roku
+
+Zaprogramuj funkcję wieza(n) drukująca wieżę zbudowaną z n klocków o wysokości 3, ale o coraz większych podstawach. Na przykład wieza(3) powinno dać taki wynik:
+
+  #
+  #
+  #
+ ###
+ ###
+ ###
+#####
+#####
+#####
+Ta część jest za 1 pkt.
+
+Aby dostać drugi punkt zaprogramuj funkcję wieze(lista), która drukuje obok siebie wieże o wysokościach podanych na liście lista. Na przykład wywołanie wieze([2,1,3]) powinno dać taki wynik:
+
+        #
+        #
+        #
+ #     ###
+ #     ###
+ #     ###
+### # #####
+### # #####
+### # #####

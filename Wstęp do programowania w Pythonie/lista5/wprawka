@@ -1,0 +1,11 @@
+Wykorzystaj poniższy fragment kodu do stworzenia pokazanego rysunku. Jest to warte 2p, natomiast wersja uproszczona (tylko jedno kółko, argument to napis) jest warta 1.2p. To jest kod
+
+colors = {
+   'r' : 'red', 
+   'g' : 'green', 
+   'b' : 'blue',
+   'y' : 'yellow',
+   'o' : 'orange', 
+}
+
+dane_o_rysunku = ['bobby' + 'bobby'+ 'bobby', 'rybogryby', 'grrrrrry', 'yo' * 10] * 2

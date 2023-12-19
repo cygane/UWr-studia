@@ -1,0 +1,19 @@
+Bedziemy zajmowali się plikiem tekstowym, przedstawiającym szereg transakcji pomiędzy różnymi osobami. Każdy wiersz tego pliku ma jedną z trzech postaci postaci:
+
+A: <kto-daje> <komu> <ile-pieniędzy>
+B: + <kto-zarobił> <ile-pieniędzy>
+C: # komentarz, najczęściej zawierający jakąś liczbę, ale niekoniecznie
+Przykładowa postać tego pliku:
+
++ Jaś 20
++ Basia 10
+Jaś Małgosia 10
+Małgosia Basia 7
+Basia Jaś 3
+# liczba na dzisiaj: 1729
+Twoim zadaniem jest:
+
+napisać program, który wczytuje taki plik i śledzi wszystkie transakcje, a następnie wypisuje osobę, która jest najbogatsza wraz z jej stanem posiadania. Przetestuj program na pliku transakcje.txt 1.5p
+dodać dodatkową, trochę dziwną funcjonalność: napisać kod, który dla przykładu z treści wprawki znajduje i wypisuje taką 'liczbę na dzisiaj', żeby wartość funkcji hash dla tekstu zawierała 7 siódemek pod rząd (czyli była 'hiperszczęśliwa'). Wartość funkcji hash powinieneś również wypisać 0.5
+powiedzieć, z jakim społecznie istotnym (acz niekoniecznie pozytywnym) zjawiskiem X łączą się te dwa punkty (+0.01p dla pierwszej osoby, która udzieli odpowiedzi)
+powiedzieć, jakie są istotne różnice między wprawką a X-em (+0.01 dla każdej różnicy i i każdej osoby, która jako pierwsza tę różnicę wskaże)

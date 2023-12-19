@@ -1,0 +1,17 @@
+Rozważamy zadanie szukania takich fragmentów tekstu, że pierwsze litery kolejnych wyrazów tworzą słowo. Przykładowo słowo spin znajduje się w poniższych fragmentach:
+
+spin
+  szczęście… Piękna i nieszczęśliwa;
+  szepnęła panna Izabela, nerwowo
+  się, panna Izabela nieznacznie
+  sesję. Pan Ignacy nie
+  siedzi pan Ignacy. Nieszczęśliwy
+  sobie pieniędzy i nawzajem
+  swoją przyjaźnią i nawet
+  Stopniowo pannę Izabelę napełnia
+  są podli, i nareszcie
+Wersja za 1.5p:
+znajdź i wypisz wszystkie fragmenty tekstu z Lalki, t.I, które odpowiadają jakiemuś słowu (z listy polskich słów używanej w zadaniach) o długości od 5 do 10 liter (wypisuj słowa wraz z odpowiadającymi im fragmentami)
+
+Wersja za 2p:
+Wykonaj wersję poprzednią, a dodatkowo znajdź takie słowo o długości większej niż 4, które znajduje się w jak największej liczbie różnych fragmentów (przykładowo 'spin' znajduje się w 9 fragmentach, ale jest za krótki, bo ma tylko 4 litery), Wypisz to słowo wraz z odpowiednimi fragmentami

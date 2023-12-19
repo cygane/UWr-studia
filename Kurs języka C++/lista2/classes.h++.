@@ -1,0 +1,92 @@
+#ifndef CLASSES_HPP
+#define CLASSES_HPP
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Vector
+{
+    private:
+        double x;
+        double y;
+
+    public:
+        Vector();
+        Vector(const Vector& v );
+        void set_vector(double dx,double dy);
+        double getvX();
+        double getvY();
+};
+
+class Point
+{
+    private:
+        double x;
+        double y;
+
+    public:
+        Point();
+        Point(const Point& p);
+        void translate(Vector c);
+        void symmetry_x();
+        void symmetry_y();
+        void rotate_by_angle(Point c,double angle);
+        void rotate_by_point(Point c);
+        void setX(double dx);
+        void setY(double dy);
+        double getX();
+        double getY();
+
+};
+
+class Segment
+{
+    private:
+        Point a;
+        Point b;
+
+    public:
+        Segment();
+        Segment(const Segment& s);
+        double length_s();
+        bool belong(Point c);
+        void translate(Vector c);
+        void symmetry_x();
+        void symmetry_y();
+        void rotate_by_angle(Point c,double angle);
+        void rotate_by_point(Point c);
+        void set_segment(double ax,double ay,double bx, double by);
+        double getaX();
+        double getaY();
+        double getbX();
+        double getbY();
+};
+
+class Triangle
+{
+    private:
+        Point a;
+        Point b;
+        Point c;
+
+    public:
+        Triangle();
+        Triangle(const Triangle& t);
+        double perimeter();
+        double pole();
+        bool inside(Point d);
+        void translate(Vector d);
+        void symmetry_x();
+        void symmetry_y();
+        void rotate_by_angle(Point d,double angle);
+        void rotate_by_point(Point d);
+        void set_triangle(double ax,double ay,double bx, double by,double cx,double cy);
+        double gettaX();
+        double gettaY();
+        double gettbX();
+        double gettbY();
+        double gettcX();
+        double gettcY();
+};
+
+#endif
