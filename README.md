@@ -1,19 +1,31 @@
 # Studia
 ## Pierwszy semestr
-Wstęp do programowania w pythonie  
+Wstęp do Programowania w Pythonie  
 Wstęp do Informatyki  
 Analiza Matematyczna  
 Logika dla Informatyków  
-Kurs : Podstawowy Warsztat Informatyka  
+Kurs: Podstawowy Warsztat Informatyka  
 
 ## Drugi semestr  
-Metody programowania   
+Metody Programowania   
 Algebra  
 Programowanie Obiektowe  
-Kurs języka C++  
+Kurs Języka C++  
+Usługi Finansowe
 
 ## Trzeci semestr  
+Kurs Rozszerzony Języka Python
+Matematyka Dyskretna
+Metody Implementacji Algorytmów
+Analiza Numeryczna
+Ochrona Własności Intelektualnej
+Wybrane Elementy Praktyki Projektowania Oprogramowania
 
+## Czwarty semestr
+Alorytmy i Struktury Danych
+Rachunek Prawdopodobieństwa i Statystyka
+Kurs: React
+Systemy Komputerowe
 
 
 
