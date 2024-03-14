@@ -1,0 +1,144 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: unset;
+  font-size: unset;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.card {
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  /* background-color: lime; */
+  max-width: 400px;
+  width: 60%;
+  border-radius: 20px;
+  padding: 40px 40px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: 100;
+  transition: 1s;
+}
+
+.card .photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card:has(.profilePhoto:hover) {
+  background: palevioletred;
+}
+
+.profilePhoto {
+  position: absolute;
+  left: -60px;
+  z-index: 10;
+  transition: 1s;
+}
+
+.profilePhotoWitch {
+  position: absolute;
+  width: 100%;
+}
+
+.profilePhoto:hover {
+  opacity: 0;
+}
+
+.info {
+  /* background-color: aliceblue; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info b {
+  font-weight: 400;
+}
+
+.info h2 {
+  font-weight: 400;
+  font-size: 42px;
+}
+
+.info .infoList {
+  text-align: left;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  background-color: #cb8fe9;
+  padding: 8px 20px;
+  border-radius: 100px;
+  width: 120px;
+  text-align: center;
+  transition: background 1s, transform 0.8s;
+  /* transition: 1s; */
+}
+
+.skill:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 2s ease forwards;
+  color: white;
+}
+
+.about h3 {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: 100%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
