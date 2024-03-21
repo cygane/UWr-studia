@@ -28,7 +28,7 @@ const RecipeProvider = ({ children }: { children: React.ReactNode }) => {
       id: Math.random(), 
       name,
       content,
-      fav: false,
+      fav: true,
     };
     setRecipes(prevRecipes => [...prevRecipes, newRecipe]);
   };

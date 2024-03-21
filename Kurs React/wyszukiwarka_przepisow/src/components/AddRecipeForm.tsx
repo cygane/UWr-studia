@@ -20,23 +20,29 @@ const AddRecipeForm: React.FC = () => {
   };
 
   return (
-    <div className="add-recipe-form">
-      <h2>Dodaj nowy przepis:</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Nazwa przepisu"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <textarea
-          placeholder="Treść przepisu"
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-        />
-        <button type="submit">Dodaj przepis</button>
-        {error && <p className="error">Wypełnij wszystkie pola</p>}
-      </form>
+    <div className="add-recipee">
+      <div className="add-form">
+        <div className="header2">
+          <h2>Dodaj nowy przepis:</h2>
+        </div>
+        <form onSubmit={handleSubmit}>
+          <input
+            className="input-add-recipe"
+            type="text"
+            placeholder="Recipe name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <textarea
+            className="textarea-add-recipe"
+            placeholder="Recipe content"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          />
+          <button className="add-button"type="submit">Add recipe</button>
+          {error && <p className="error">Wypełnij wszystkie pola</p>}
+        </form>
+      </div>
     </div>
   );
 };

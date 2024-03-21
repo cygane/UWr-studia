@@ -13,25 +13,28 @@ const FavoritesFilter: React.FC = () => {
   );
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Filtruj po nazwie lub opisie"
-        value={keyword}
-        onChange={(e) => setKeyword(e.target.value)}
-      />
+    <div className="recipe-list-container">
+      <div className="filter-input-container">
+        <input
+          className="filter-input"
+          type="text"
+          placeholder="Filter by name or content"
+          value={keyword}
+          onChange={(e) => setKeyword(e.target.value)}
+        />
+      </div>
       <button
         className="show-button"
         onClick={() => setFilterFav(!filterFav)}
       >
-        {filterFav ? "Show All Recipes" : "Show Only Fav Recipes"}
+        {filterFav ? "Show All Recipes" : "Show Only Favorite Recipes"}
       </button>
       <ul>
         {filteredRecipes.filter((recipe) => (filterFav ? recipe.fav : true))
           .map(recipe => (
-          <li key={recipe.id}>
+          <div key={recipe.id}>
             <RecipeItem recipe={recipe}/>
-          </li>
+          </div>
         ))}
       </ul>
     </div>
