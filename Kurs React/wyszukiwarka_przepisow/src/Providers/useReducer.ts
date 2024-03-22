@@ -31,6 +31,7 @@ export const recipeReducer = (state: IRecipe[], action: RecipeAction) => {
           id: Math.random(),
           name: action.payload.name,
           content: action.payload.content,
+          fav: false,
         },
       ];
     case 'REMOVE_RECIPE':

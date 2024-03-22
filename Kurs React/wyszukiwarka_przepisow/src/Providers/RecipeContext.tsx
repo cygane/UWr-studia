@@ -1,14 +1,13 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 import { IRecipe } from '../types/Recipe.type';
+import { recipeReducer } from './useReducer';
 
-interface RecipeContextProps {
+export const RecipeContext = createContext<{
   recipes: IRecipe[];
-  addRecipe: (name: string, content: string) => void;
+  addRecipe: (id: number, name: string, content: string) => void;
   removeRecipe: (id: number) => void;
   toggleFav: (id: number) => void;
-}
-
-export const RecipeContext = createContext<RecipeContextProps>({
+}>({
   recipes: [],
   addRecipe: () => {},
   removeRecipe: () => {},
@@ -17,33 +16,25 @@ export const RecipeContext = createContext<RecipeContextProps>({
 
 export const useRecipeContext = () => useContext(RecipeContext);
 
+const initialrecipes: IRecipe[] = [
+  { id: 1, name: 'pizza', content: 'salt, yeast, flour, water, olive oil', fav: false },
+  { id: 2, name: 'banana split', content: 'bananas, whipped cream, ice cream, candies', fav: false },
+];
+
 const RecipeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [recipes, setRecipes] = useState<IRecipe[]>([
-    { id: 1, name: 'pizza', content: 'salt, yeast, flour, water, olive oil', fav: false },
-    { id: 2, name: 'banana split', content: 'bananas, whipped cream, ice cream, candies', fav: false },
-  ]);
+  const [recipes, dispatch] = useReducer(recipeReducer, initialrecipes);
 
-  const addRecipe = (name: string, content: string) => {
-    const newRecipe: IRecipe = {
-      id: Math.random(), 
-      name,
-      content,
-      fav: true,
-    };
-    setRecipes(prevRecipes => [...prevRecipes, newRecipe]);
-  };
+  function addRecipe( id: number, name: string, content: string) {
+    dispatch({ type: "ADD_RECIPE", payload: { id, name, content } });
+  }
 
-  const removeRecipe = (id: number) => {
-    setRecipes(prevRecipes => prevRecipes.filter(recipe => recipe.id !== id));
-  };
+  function removeRecipe(id: number) {
+    dispatch({ type: "REMOVE_RECIPE", payload: { id } });
+  }
 
-  const toggleFav = (id: number) => {
-    setRecipes(prevRecipes =>
-      prevRecipes.map(recipe =>
-        recipe.id === id ? { ...recipe, fav: !recipe.fav } : recipe
-      )
-    );
-  };
+  function toggleFav(id: number) {
+    dispatch({ type: "TOGGLE_FAV", payload: { id }});
+  }
 
   return (
     <RecipeContext.Provider value={{ recipes, addRecipe, removeRecipe, toggleFav }}>
