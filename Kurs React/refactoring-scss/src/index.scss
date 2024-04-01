@@ -1,0 +1,188 @@
+@use "variables";
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.portfolio {
+  margin: 0 auto;
+}
+
+.content-card {
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.theme-toggle-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Light theme */
+.light-theme {
+  background-color: variables.$background-light;
+  color: variables.$text-light; /* Text color for light theme */
+}
+
+.light-theme .navbar a {
+  color: variables.$text-light; /* Link color for light theme */
+}
+
+.light-theme .theme-toggle-button {
+  background-color: variables.$text-light;
+  color: variables.$button-text;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.light-theme .theme-toggle-button:hover {
+  background-color: variables.$button-hover-light;
+}
+
+.light-theme .content-card {
+  background-color: variables.$content-card-light;
+}
+
+.light-theme .team-member {
+  background-color: variables.$team-member-light;
+  color: variables.$text-light;
+}
+
+.light-theme .blog-post {
+  background-color: variables.$blog-post-light;
+  color: variables.$text-light;
+}
+
+.light-theme .blog-post button {
+  background-color: variables.$button-bg;
+  color: variables.$button-text;
+}
+
+.light-theme .blog-post button:hover {
+  background-color: variables.$button-bg-hover;
+}
+
+.light-theme .section:nth-child(even) {
+  background-color: variables.$section-bg-light;
+}
+
+.light-theme .navbar {
+  background-color: variables.$blog-post-light;
+}
+
+.light-theme .contact-form {
+  background-color: variables.$form-bg-light;
+  color: variables.$text-light;
+  border: 1px solid variables.$form-border-light;
+}
+
+.light-theme .contact input[type="text"],
+.light-theme .contact input[type="email"],
+.light-theme .contact textarea {
+  background-color: variables.$textarea-light-bg;
+  color: variables.$text-light;
+  border: 1px solid variables.$border-light;
+}
+
+.light-theme .contact button {
+  background-color: variables.$button-bg;
+  color: variables.$button-text;
+}
+
+.light-theme .contact button:hover {
+  background-color: variables.$button-hover-light;
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: variables.$background-dark;
+  color: variables.$text-dark; /* Text color for dark theme */
+}
+
+.dark-theme .navbar a {
+  color: variables.$text-dark; /* Link color for dark theme */
+}
+
+.dark-theme .theme-toggle-button {
+  background-color: variables.$button-dark;
+  color: variables.$button-bg-hover-dark;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-theme .theme-toggle-button:hover {
+  background-color: variables.$button-hover-dark;
+}
+
+.dark-theme .content-card {
+  background-color: variables.$button-bg-hover-dark;
+}
+
+.dark-theme .team-member {
+  background-color: variables.$section-bg-dark;
+  color: variables.$text-dark;
+}
+
+.dark-theme .blog-post {
+  background-color: variables.$blog-post-dark;
+  color: variables.$text-dark;
+}
+
+.dark-theme .blog-post button {
+  background-color: variables.$button-bg;
+  color: variables.$text-dark;
+}
+
+.dark-theme .blog-post button:hover {
+  background-color: variables.$button-bg-hover;
+}
+
+.dark-theme .section:nth-child(even) {
+  background-color: variables.$section-bg-dark;
+}
+
+.dark-theme .navbar {
+  background-color: variables.$blog-post-dark;
+}
+
+.dark-theme .contact-form {
+  background-color: variables.$form-bg-dark;
+  color: variables.$text-dark;
+  border: 1px solid variables.$form-border-dark;
+}
+
+.dark-theme .contact input[type="text"],
+.dark-theme .contact input[type="email"],
+.dark-theme .contact textarea {
+  background-color: variables.$section-bg-dark;
+  color: variables.$text-dark;
+  border: 1px solid variables.$textarea-dark-border;
+}
+
+.dark-theme .contact button {
+  background-color: variables.$button-bg;
+  color: variables.$text-dark;
+}
+
+.dark-theme .contact button:hover {
+  background-color: variables.$button-bg-hover;
+}
+
