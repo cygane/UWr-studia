@@ -1,0 +1,180 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.portfolio {
+  margin: 0 auto;
+}
+
+.theme-toggle-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Light theme */
+.light-theme {
+  background-color: #fff;
+  color: #333; /* Text color for light theme */
+}
+
+.light-theme .navbar a {
+  color: #333; /* Link color for light theme */
+}
+
+.light-theme .theme-toggle-button {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.light-theme .theme-toggle-button:hover {
+  background-color: #555;
+}
+
+.light-theme .content-card {
+  background-color: #eee;
+}
+
+.light-theme .team-member {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.light-theme .blog-post {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.light-theme .blog-post button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.light-theme .blog-post button:hover {
+  background-color: #45a049;
+}
+
+.light-theme .section:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.light-theme .navbar {
+  background-color: #f0f0f0;
+}
+
+.light-theme .contact-form {
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.light-theme .contact input[type="text"],
+.light-theme .contact input[type="email"],
+.light-theme .contact textarea {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.light-theme .contact button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.light-theme .contact button:hover {
+  background-color: #45a049;
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: #111;
+  color: #fff; /* Text color for dark theme */
+}
+
+.dark-theme .navbar a {
+  color: #fff; /* Link color for dark theme */
+}
+
+.dark-theme .theme-toggle-button {
+  background-color: #ddd;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-theme .theme-toggle-button:hover {
+  background-color: #ccc;
+}
+
+.dark-theme .content-card {
+  background-color: #333;
+}
+
+.dark-theme .team-member {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme .blog-post {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-theme .blog-post button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.dark-theme .blog-post button:hover {
+  background-color: #45a049;
+}
+
+.dark-theme .section:nth-child(even) {
+  background-color: #444;
+}
+
+.dark-theme .navbar {
+  background-color: #222;
+}
+
+.dark-theme .contact-form {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-theme .contact input[type="text"],
+.dark-theme .contact input[type="email"],
+.dark-theme .contact textarea {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.dark-theme .contact button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.dark-theme .contact button:hover {
+  background-color: #45a049;
+}
