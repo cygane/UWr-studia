@@ -59,7 +59,7 @@ const Form: React.FC = ()  => (
         <input className="Input" id="currentPassword" type="password" />
       </fieldset>
       <fieldset className="Fieldset">
-        <label className="Label" htmlFor="newPassword">
+        <label className="Label">
           New password
         </label>
         <input className="Input" id="newPassword" type="password" />
