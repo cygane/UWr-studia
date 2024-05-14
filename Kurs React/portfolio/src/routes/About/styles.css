@@ -1,0 +1,23 @@
+.picture {
+    margin-left: 20px;
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 1000px;
+}
+
+.intro-place {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.place-ev {
+    padding: 0 40px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

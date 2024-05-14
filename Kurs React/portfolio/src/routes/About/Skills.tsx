@@ -1,11 +1,13 @@
 import { Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
+import './styles.css';
 
 const frame = ['PyGame', 'NumPy', 'Node.js','Express','React', 'Material UI','Vite'];
 
 export default function Skills() {
     return (
         <>
+        <div className="skills">
             <Typography variant="h5" gutterBottom>
                 Programming Skills
             </Typography>
@@ -36,7 +38,7 @@ export default function Skills() {
                 </ListItem>
             </List>
 
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom sx={{width: 'fit-content'}}>
                 Frameworks and Libraries:
             </Typography>
             <List>
@@ -56,6 +58,7 @@ export default function Skills() {
                     <img src="https://skillicons.dev/icons?i=github,vscode,pycharm,clion,idea"></img>
                 </ListItem>
             </List>
+            </div>
         </>
     );
 }

@@ -5,9 +5,9 @@ import "./styles.css"
 export default function RootLayout() {
 
     return (
-        <div className="header">
+        <>
             <ResponsiveAppBar />
             <Outlet />
-        </div>
+        </>
     );
 }

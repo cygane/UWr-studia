@@ -4,9 +4,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Link from '@mui/material/Link';
 import {Typography} from "@mui/material";
+import "./styles.css"
 
 export default function Home(){
     return(
+        <div className="content">
         <Box sx={{ bgcolor: "primary.light", py: 3 }}>
             <Container maxWidth="md">
                 <Typography>
@@ -26,5 +28,6 @@ export default function Home(){
                 </Link>
             </Container>
         </Box>
+        </div>
     );
 }

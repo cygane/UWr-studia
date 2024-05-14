@@ -4,6 +4,7 @@ import fajrant from '../../assets/fajrant.png'
 import nocos from '../../assets/nocos.jpeg'
 import { List } from "@mui/material";
 import ProjectTile from "../../components/ProjectTile/ProjectTile";
+import './styles.css';
 
 const projects = [
     {
@@ -61,6 +62,7 @@ const projects = [
 
 export default function Projects() {
     return(
+        <div className='container-tail'>
         <List sx={{width: "50%",}}>
             {projects.map((project) => (
                 <ProjectTile
@@ -69,9 +71,10 @@ export default function Projects() {
                     description={project.description}
                     href={project.href}
                     code={project.code}
-                    tech={project.code}
+                    tech={project.tech}
                 />
             ))}
         </List>
+        </div>
     );
 }

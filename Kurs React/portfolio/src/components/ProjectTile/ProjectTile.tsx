@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { ListItem, ListItemText, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 interface IImgMediaCard{
   img: any,
@@ -18,11 +19,12 @@ interface IImgMediaCard{
 
 export default function ImgMediaCard({img, title, description, href, code, tech}: IImgMediaCard) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <div className='mediacard'>
+    <Card >
       <CardMedia
         component="img"
         alt={title}
-        height="140"
+        height="200"
         image={img}
       />
       <CardContent>
@@ -39,13 +41,16 @@ export default function ImgMediaCard({img, title, description, href, code, tech}
         ))}
       </CardContent>
       <CardActions>
-        {href !== "" && <Button key={href} component={Link} to={href} sx={{ my: 2, color: 'white' }}>
+      <div className="button-place">
+        {href !== "" && <Button key={href} component={Link} to={href} sx={{ my: 2}}>
             See live
         </Button>}
-        {code !== "" && <Button key={code} component={Link} to={code} sx={{ my: 2, color: 'white' }}>
+        {code !== "" && <Button key={code} component={Link} to={code} sx={{ my: 2}}>
             See code
         </Button>}
+        </div>
       </CardActions>
     </Card>
+    </div>
   );
 }

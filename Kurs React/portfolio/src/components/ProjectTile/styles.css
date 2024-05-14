@@ -1,0 +1,10 @@
+.mediacard {
+    aspect-ratio: 1/1;
+    width: 800px;
+}
+
+.button-place {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
