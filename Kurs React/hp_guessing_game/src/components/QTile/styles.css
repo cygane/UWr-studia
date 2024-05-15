@@ -1,0 +1,21 @@
+
+.qtile {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+  
+.qtile .image-container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+  
+.qtile img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+  
