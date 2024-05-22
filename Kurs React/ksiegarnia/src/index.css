@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  html {
+      min-height: 100vh;
+      scroll-behavior: smooth;
+  }
+  
+  
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+  }
+  
+  a {
+      color: inherit;
+      text-decoration: inherit;
+      cursor: pointer;
+  }
+  
+  .noSelect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
