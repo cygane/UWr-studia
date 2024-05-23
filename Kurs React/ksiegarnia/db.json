@@ -15,7 +15,7 @@
       "autor": "Bolesław Prus",
       "rokWydania": "1890",
       "liczbaKopii": 3,
-      "cena": 30.50,
+      "cena": 30.5,
       "gatunek": "Novel"
     },
     {
@@ -33,7 +33,7 @@
       "autor": "Witold Gombrowicz",
       "rokWydania": "1937",
       "liczbaKopii": 4,
-      "cena": 22.40,
+      "cena": 22.4,
       "gatunek": "Novel"
     },
     {
@@ -42,8 +42,26 @@
       "autor": "Stanisław Lem",
       "rokWydania": "1961",
       "liczbaKopii": 10,
-      "cena": 45.00,
+      "cena": 45,
       "gatunek": "Science Fiction"
+    },
+    {
+      "id": 6,
+      "tytul": "asdf",
+      "autor": "sxdfg",
+      "rokWydania": "2024",
+      "liczbaKopii": "1234",
+      "cena": "123",
+      "gatunek": "Novel"
+    },
+    {
+      "id": 7,
+      "tytul": "testy",
+      "autor": "sdfgh",
+      "rokWydania": "1976",
+      "liczbaKopii": "6",
+      "cena": "89",
+      "gatunek": "Poem"
     }
   ]
 }

@@ -2,6 +2,7 @@ import { getGeneres } from "../../utils";
 import { useQuery } from "@tanstack/react-query";
 import React, { useState, useEffect } from "react";
 import { Book } from '../Dialog/Dialog';
+import './styles.css';
 
 interface FormProps {
   book: Book;
@@ -39,9 +40,6 @@ export default function Form({ book, onSave }: FormProps) {
     if (!formState.cena || isNaN(formState.cena) || formState.cena < 0) {
       newErrors.cena = "Podaj prawidłową cenę";
     }
-    if (!formState.gatunek) {
-      newErrors.gatunek = "Gatunek jest wymagany";
-    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -63,8 +61,8 @@ export default function Form({ book, onSave }: FormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form onSubmit={handleSubmit} className="form">
+      <div className="input-div">
         <label>Tytuł:</label>
         <input
           type="text"
@@ -74,7 +72,7 @@ export default function Form({ book, onSave }: FormProps) {
         />
         {errors.tytul && <div style={{ color: 'red' }}>{errors.tytul}</div>}
       </div>
-      <div>
+      <div className="input-div">
         <label>Autor:</label>
         <input
           type="text"
@@ -84,7 +82,7 @@ export default function Form({ book, onSave }: FormProps) {
         />
         {errors.autor && <div style={{ color: 'red' }}>{errors.autor}</div>}
       </div>
-      <div>
+      <div className="input-div">
         <label>Rok wydania:</label>
         <input
           type="number"
@@ -94,7 +92,7 @@ export default function Form({ book, onSave }: FormProps) {
         />
         {errors.rokWydania && <div style={{ color: 'red' }}>{errors.rokWydania}</div>}
       </div>
-      <div>
+      <div className="input-div">
         <label>Liczba kopii:</label>
         <input
           type="number"
@@ -104,7 +102,7 @@ export default function Form({ book, onSave }: FormProps) {
         />
         {errors.liczbaKopii && <div style={{ color: 'red' }}>{errors.liczbaKopii}</div>}
       </div>
-      <div>
+      <div className="input-div">
         <label>Cena:</label>
         <input
           type="number"
@@ -115,7 +113,7 @@ export default function Form({ book, onSave }: FormProps) {
         />
         {errors.cena && <div style={{ color: 'red' }}>{errors.cena}</div>}
       </div>
-      <div>
+      <div className="input-div">
         <label>Gatunek:</label>
         <select
           name="gatunek"
@@ -130,7 +128,7 @@ export default function Form({ book, onSave }: FormProps) {
         </select>
         {errors.gatunek && <div style={{ color: 'red' }}>{errors.gatunek}</div>}
       </div>
-      <button type="submit">Save</button>
+      <button className="button-div"type="submit">Save</button>
     </form>
   );
 }

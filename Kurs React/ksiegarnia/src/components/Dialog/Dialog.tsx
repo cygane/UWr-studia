@@ -4,6 +4,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import { getBook } from "../../utils";
 import Form from "../Form/Form";
+import './styles.css';
 
 export interface Book {
   id: number;
@@ -56,7 +57,7 @@ export default function Bdialog({ id, isOpened, onSave, onClose }: BdialogProps)
   return (
     <div className="Form">
       <Dialog onClose={handleClose} open={open}>
-        <DialogTitle>{bookData ? "Zedytuj ksiązkę" : "Dodaj ksiązkę"}</DialogTitle>
+        <DialogTitle className="dialog-title">{bookData ? "Zedytuj książkę" : "Dodaj książkę"}</DialogTitle>
         {isLoading ? (
           "Loading..."
         ) : (

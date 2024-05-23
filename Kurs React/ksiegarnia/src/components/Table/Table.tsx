@@ -7,6 +7,7 @@ import AlertDialog from "../Alert/Alert";
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
+import { IconButton } from '@mui/material';
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 80 },
@@ -18,7 +19,7 @@ const columns: GridColDef[] = [
     type: "number",
     width: 100,
   },
-  { field: "liczbaKopii", headerName: "Liczba kopii", type: "number", width: 80 },
+  { field: "liczbaKopii", headerName: "Liczba kopii", type: "number", width: 150 },
   {
     field: "cena",
     headerName: "Cena",
@@ -108,7 +109,9 @@ export default function Table() {
               paginationModel: { page: 0, pageSize: 5 },
             },
           }}
-          pageSizeOptions={[5, 10, 15, 20, { label: "All", value: -1 }]}
+          pageSizeOptions={[5, 10, 15, 20]}
+          checkboxSelection={false}
+          rowSelectionModel={[]}
         />
       </div>
       <Bdialog
@@ -124,7 +127,23 @@ export default function Table() {
         onSave={(book) => handleAdd(book)}
         onClose={() => setAddOpened(false)}
       />
-      <AddIcon onClick={() => setAddOpened(true)}/>
+      <IconButton
+        onClick={() => setAddOpened(true)}
+        style={{
+          position: 'fixed',
+          bottom: '16px',
+          right: '16px',
+          backgroundColor: '#1976d2',
+          color: 'white',
+          width: '56px',
+          height: '56px',
+          borderRadius: '28px',
+          boxShadow: '0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)'
+        }}
+      >
+        <AddIcon />
+      </IconButton>
+      {/* <AddIcon onClick={() => setAddOpened(true)}/> */}
       <AlertDialog
         onAddBook={() => {
           deleteBookMutation.mutate(selectedBook as number);
