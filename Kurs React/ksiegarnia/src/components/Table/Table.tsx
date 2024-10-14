@@ -145,7 +145,7 @@ export default function Table() {
       </IconButton>
       {/* <AddIcon onClick={() => setAddOpened(true)}/> */}
       <AlertDialog
-        onAddBook={() => {
+        onConfirm={() => {
           deleteBookMutation.mutate(selectedBook as number);
           setAlertOpen(false);
         }}

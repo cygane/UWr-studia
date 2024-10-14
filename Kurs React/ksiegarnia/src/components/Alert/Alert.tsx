@@ -8,10 +8,10 @@ import DialogContentText from '@mui/material/DialogContentText';
 interface AlertDialogProps {
     open: boolean;
     onClose: () => void;
-    onAddBook: () => void;
+    onConfirm: () => void;
 }
 
-export default function AlertDialog({ open, onClose, onAddBook }: AlertDialogProps) {
+export default function AlertDialog({ open, onClose, onConfirm: onAddBook }: AlertDialogProps) {
 
   return (
     <>

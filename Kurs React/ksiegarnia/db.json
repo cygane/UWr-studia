@@ -41,9 +41,9 @@
       "tytul": "Solaris",
       "autor": "Stanisław Lem",
       "rokWydania": "1961",
-      "liczbaKopii": 10,
-      "cena": 45,
-      "gatunek": "Science Fiction"
+      "liczbaKopii": "20",
+      "cena": "45.3",
+      "gatunek": "Historical"
     },
     {
       "id": 6,
