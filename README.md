@@ -27,6 +27,13 @@ Rachunek Prawdopodobieństwa i Statystyka
 Kurs: React
 Systemy Komputerowe
 
+## Piąty semestr
+Kurs Projektowania Aplikacji z Bazami Danych
+Kurs ASP.NET
+Zaawansowane Algorytmy i Struktury Danych
+Machine Learning
+Inżynieria Oprogramowania
+
 
 
 
