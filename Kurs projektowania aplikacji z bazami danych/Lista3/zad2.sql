@@ -1,5 +1,3 @@
--- cos dziwnego dla statica, albo ja w to nie umiem (duza szansa)
-
 --rodzaje kursorów:
 --statyczne: dla danych wynikowych kursora tworzona jes tymczasowa tabela w bazie tempdb i na tej tabeli wykonywane są operacje
 --dynamiczne: pracujemy na żywej tabeli, nie działa fetch absolute, ale działa fetch relative

@@ -1,0 +1,8 @@
+-- właśność ACID w transkacjach:
+-- Atomicity(niepodzielność) : pilnuje, zeby albo wszystkie części transakcji zostały wykonane prawidłowo, albo zadna nie została wykonana
+--                             (w ten sposób chroni przed częściowymi zmiananmi w bazie danych)
+-- Consistency(spójnośc) : gwarantuje, ze transakcja peznosi bazę danych z jednego stanu do drugiego, zachowując wszystkie reguły 
+--                         (ograniczenia, triggery), chroni integrację bazy danych
+-- Isolation(odseparowanie) : pilnuje, zeby transakcje ze sobą nie kolidowały
+--                            chroni przed dirty reads, phantom reads
+-- Durability(wytrzymałość) : kiedy nastąpi koniec transakcji, zostaje to permanentnie przechowane w bazie danych (osiągane dzięki backups, logs)
