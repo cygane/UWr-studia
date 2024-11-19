@@ -1,0 +1,19 @@
+﻿@{
+}
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    @using(@Html.BeginForm(FormMethod.Post, htmlAttributes: new
+    {
+        enctype = "multipart/form-data"
+    }))
+    {
+        <label>Upload file: </label>
+        <input type="file" name="file" />
+        <button type="submit">Wyślij plik</button> 
+    }
+    </body>
+</html>

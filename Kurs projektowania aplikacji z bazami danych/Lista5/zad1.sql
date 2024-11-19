@@ -6,7 +6,7 @@
 -- 2  |Maria Mysz     |9 Górna Street,  |2030-01-04 11.45, room 7       |150zl  |Ewa ciarka |Dermatology:  
 --    |               |55-555 Las       |                               |       |           |Birthmark inspection (...)
 
--- 1INF
+-- 1NF
 -- Wszystkie wartość w komórkach tabel są atomowe, czyli żadnych list, kolekcji, itp.
 -- Kolejnosc wierszy dowolna
 -- Nie zawiera powtarzajacych sie grup informacji
@@ -19,7 +19,7 @@
 -- 2  |Maria Mysz     |9 Górna Street   |55-555       |Las   |2030-01-04 11.45  |room 7    |150zl  |Ewa ciarka |Dermatology        |Birthmark inspection (...)
 --    |               |                 |             |      |                  |          |       |           |                   |
 
--- 2INF
+-- 2NF
 -- To samo, co w INF oraz dodatkowo:
 -- Żadna kolumna nie kluczowa nie jest częściowo funkcyjnie zależna od jakiegokolwiek klucza kandydującego (potencjalnego)
 -- (W tabeli powinny być dane dotyczące tylko określonego rodzaju obiektu)
@@ -49,7 +49,7 @@
 -- 2           |room 7    |Ewa ciarka 
 --             |          |           
 
--- 3INF
+-- 3NF
 -- To samo, co w 2INF oraz dodatkowo:
 -- Każda kolumna nie będąca częścią klucza, zależy od niego bezpośrednio (a nie przechodnio)
 -- Cel: Eliminowanie danych, które nie zależą od klucza
